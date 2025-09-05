@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    background-image: linear-gradient(#000000,#543C66, #75548F, #B481DB);  
+    text-align: center;
+     
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+h2 {
+    margin: 15px 0 30px;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 10%;
+}
+
+.botao{
+    width: 20%;
+    min-width: 150px;
+    max-width: 250px;
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.1em;
+    margin: 8px 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #3e294e;
+    transform: scale(1.05);
+}
+
+
+.container-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    gap: 1.2em;
+    margin-top: 4%;
+    cursor: pointer;
+}
+
+.icon a i {
+    font-size: 1.5em;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icon a:hover i {
+    color: #dcd8e0;
+    transform: scale(1.2);
+}
+
+/* --- Media Query para telas de celular --- */
+@media (max-width: 600px) {
+  /* Os estilos abaixo só serão aplicados em telas com até 600px de largura */
+
+  /* Torna os botões mais largos para ficarem mais fáceis de clicar no celular */
+  .botao {
+    width: 90%; 
+    padding: 15px 10px;
+    font-size: 1.2em;
+  }
+  
+  /* Aumenta o tamanho da fonte e reduz o espaçamento entre os ícones para telas menores */
+  .icon a i {
+    font-size: 1.8em; 
+  }
+  
+  .icon {
+    gap: 1.2em;
+  }
+}
