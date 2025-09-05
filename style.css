@@ -66,12 +66,6 @@ h2 {
     cursor: pointer;
 }
 
-.icon a {
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
-    text-decoration: none;
-}
-
 .icon a i {
     font-size: 1.5em;
     color: #13011a;
@@ -108,5 +102,6 @@ h2 {
     gap: 1.2em;
   }
 }
+
 
 
