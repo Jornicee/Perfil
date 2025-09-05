@@ -1,8 +1,16 @@
 @charset "UTF-8";
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: sans-serif;
     background-image: linear-gradient(#000000,#543C66, #75548F, #B481DB);  
+    background-attachment: fixed; 
+    background-size: cover;
     text-align: center;
      
 }
@@ -71,18 +79,14 @@ h2 {
     transform: scale(1.2);
 }
 
-/* --- Media Query para telas de celular --- */
 @media (max-width: 600px) {
-  /* Os estilos abaixo só serão aplicados em telas com até 600px de largura */
-
-  /* Torna os botões mais largos para ficarem mais fáceis de clicar no celular */
+  
   .botao {
     width: 90%; 
     padding: 15px 10px;
     font-size: 1.2em;
   }
   
-  /* Aumenta o tamanho da fonte e reduz o espaçamento entre os ícones para telas menores */
   .icon a i {
     font-size: 1.8em; 
   }
@@ -91,3 +95,4 @@ h2 {
     gap: 1.2em;
   }
 }
+
